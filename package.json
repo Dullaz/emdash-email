@@ -1,0 +1,17 @@
+{
+	"name": "@buysomepixels/email",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"description": "Email transport for EmDash with a pluggable provider abstraction (Cloudflare first).",
+	"exports": {
+		".": "./src/index.ts",
+		"./admin": "./src/admin.tsx"
+	},
+	"peerDependencies": {
+		"@emdash-cms/admin": "*",
+		"emdash": "*",
+		"react": "*",
+		"react-dom": "*"
+	}
+}
