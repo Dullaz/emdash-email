@@ -1,5 +1,5 @@
 /**
- * @buysomepixels/email — `bsp-email-plugin`
+ * @dullaz/email — EmDash email transport plugin
  *
  * A dedicated email **transport** plugin for EmDash. It registers the exclusive
  * `email:deliver` hook and dispatches to a configured provider (Cloudflare first;
@@ -12,10 +12,10 @@ import type { PluginDescriptor } from "emdash";
 import { deliver } from "./email";
 import { buildRoutes } from "./routes";
 
-export const PLUGIN_ID = "bsp-email-plugin";
+export const PLUGIN_ID = "dullaz-email";
 export const PLUGIN_VERSION = "0.1.0";
-const ENTRYPOINT = "@buysomepixels/email";
-const ADMIN_ENTRY = "@buysomepixels/email/admin";
+const ENTRYPOINT = "@dullaz/email";
+const ADMIN_ENTRY = "@dullaz/email/admin";
 
 // biome-ignore lint/suspicious/noEmptyInterface: reserved for future options
 export interface EmailPluginOptions {}

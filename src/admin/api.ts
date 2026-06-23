@@ -2,7 +2,7 @@
  *  in-band `{ __error }` result. */
 import { apiFetch } from "@emdash-cms/admin";
 
-const API_BASE = "/_emdash/api/plugins/bsp-email-plugin";
+const API_BASE = "/_emdash/api/plugins/dullaz-email";
 
 async function unwrap<T>(res: Response): Promise<T> {
 	const json = (await res.json().catch(() => null)) as

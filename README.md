@@ -1,4 +1,4 @@
-# @buysomepixels/email (`bsp-email-plugin`)
+# @dullaz/email
 
 A dedicated **email transport** plugin for EmDash with a pluggable provider
 abstraction. Ships a **Cloudflare Email Sending** provider; more (Resend, SMTP,
@@ -23,7 +23,7 @@ invites, …).
 
 ```js
 // astro.config.mjs
-import { emailPlugin } from "@buysomepixels/email";
+import { emailPlugin } from "@dullaz/email";
 
 emdash({ plugins: [emailPlugin(), commercePlugin()] });
 ```
@@ -31,7 +31,7 @@ emdash({ plugins: [emailPlugin(), commercePlugin()] });
 ## Configure
 
 Open the plugin's **Email** admin page
-(`/_emdash/admin/plugins/bsp-email-plugin/settings`):
+(`/_emdash/admin/plugins/dullaz-email/settings`):
 
 1. Pick a **provider** (Cloudflare).
 2. Fill its fields. For Cloudflare: **Account ID**, **API token** (Email Sending
@@ -72,4 +72,4 @@ host in the plugin's `allowedHosts`).
 - Provider secrets are stored in the plugin's KV. This EmDash version does not
   yet encrypt plugin secrets at rest, so scope API tokens narrowly (Email
   Sending only) and rotate if exposed.
-- Tests: `bun test packages/email`.
+- Tests: `bun test`.
