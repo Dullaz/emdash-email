@@ -1,6 +1,6 @@
 {
 	"name": "@dullaz/email",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"type": "module",
 	"description": "Email transport for EmDash with a pluggable provider abstraction (Cloudflare first).",
 	"author": "Abdullah Hasan <dev@dullaz.com>",
